@@ -2,7 +2,7 @@
 #include <string.h>
 #include "../include/filter.h"
 
-#define MAX_MOTS 1000
+#define MAX_MOTS 3000
 #define TAILLE_MOT 50
 
 int charger_mots(char mots[][TAILLE_MOT]) {
@@ -15,7 +15,7 @@ int charger_mots(char mots[][TAILLE_MOT]) {
 
     int n = 0;
 
-    while (fscanf(fichier, "%s", mots[n]) != EOF) {
+    while (n < MAX_MOTS && fscanf(fichier, "%s", mots[n]) == 1) {
         n++;
     }
 
