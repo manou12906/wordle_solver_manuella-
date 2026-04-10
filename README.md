@@ -18,4 +18,4 @@ exclusion, substring)
 
 Pour compiler le projet, il faudra taper la commande suivante :
 
-<< ./bin/wordle_solver >>
+< ./bin/wordle_solver >
