@@ -20,7 +20,7 @@ void filtre_exclure(char mots[][50], int n, char lettre) {
 
 void filtre_substring(char mots[][50], int n, char *sub) {
     for (int i = 0; i < n; i++) {
-        if (strchr(mots[i], sub)  !=NULL) {
+        if (strstr(mots[i], sub)  !=NULL) {
            printf ("%s\n", mots[i]);
         }
     }
